@@ -4,6 +4,7 @@
 
 #include<iostream>
 #include"input (1).h"
+#include"Patient.h"
 using namespace std;
 
 //prototype
@@ -48,14 +49,14 @@ int menuOption() {
 //precondition: 
 //postcondition: 
 void challenge1() {
-	//SimpleCalculator menu;
-	//menu.calculatorMenu();
+	//TranslationArithmetic menu;
+	//menu.menuInformation();
 }
 //precondition: 
 //postcondition: 
 void challenge2() {
-	//TranslationArithmetic menu;
-	//menu.menuInformation();
+	Patient menu;
+	menu.menuInformation();
 }
 //precondition:
 //postcondition: 
