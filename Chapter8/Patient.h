@@ -45,6 +45,8 @@ public:
 	void setAge(int newAge);
 	void setGender(char newGender);
 
+	void displayCheckedInTime() const;
+
 	//overloading operators
 	//key in priority queue
 	friend bool operator <(const Patient& P1, const Patient& P2); 

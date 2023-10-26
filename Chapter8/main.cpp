@@ -29,7 +29,6 @@ int main()
 
 	return EXIT_SUCCESS;
 }
-
 //precondition: making a menu option
 //postcondition: it will return an int (the choice of the menu)
 int menuOption() {
