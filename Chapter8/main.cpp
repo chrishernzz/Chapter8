@@ -1,10 +1,12 @@
 //Name: Christian Hernandez
-//Date: 10/16/2023
+//Date: 10/30/2023
 //subscription: CMPR131
 
 #include<iostream>
 #include"input (1).h"
 #include"Patient.h"
+#include"Costco.h"
+#include"WarGame.h"
 using namespace std;
 
 //prototype
@@ -48,18 +50,18 @@ int menuOption() {
 //precondition: 
 //postcondition: 
 void challenge1() {
-	//TranslationArithmetic menu;
-	//menu.menuInformation();
+	WarGame menu;
+	menu.menuInformation();
 }
-//precondition: 
-//postcondition: 
+//precondition: going to call my Patient class
+//postcondition: going to then call my mainMenuInformation function that will have all the information and the menus as well 
 void challenge2() {
 	Patient menu;
 	menu.menuInformation();
 }
-//precondition:
-//postcondition: 
+//precondition: going to call my Costco class
+//postcondition: going to then call my mainMenuInformation function that will have all the information and the menus as well 
 void challenge3() {
-	//n_Queens menu;
-	//menu.n_QueensMenu();
+	Costco menu;
+	menu.menuInformation();
 }

@@ -11,6 +11,8 @@ int inputInteger(string prompt, bool posNeg);
 int inputInteger(string prompt, int startRange, int endRange);
 double inputDouble(string prompt);
 
+//precondition: going to create a class called Patient and gets the information
+//postcondition: going to have privates, in public are creating defualt constructor, getters and setters, member functions, and overloading operators
 class Patient{
 private:
 	int priority;

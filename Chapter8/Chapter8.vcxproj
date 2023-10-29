@@ -127,12 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CardDeck.cpp" />
+    <ClCompile Include="Costco.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="WarGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CardDeck.h" />
+    <ClInclude Include="Costco.h" />
     <ClInclude Include="input (1).h" />
     <ClInclude Include="Patient.h" />
+    <ClInclude Include="WarGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

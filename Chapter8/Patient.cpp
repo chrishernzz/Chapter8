@@ -1,7 +1,7 @@
 #include "Patient.h"
 
-//precondition:
-//postcondition:
+//precondition: going to call the default constructor class
+//postcondition: going to then intialize the privates 
 Patient::Patient() : priority(0), checkedInTime(0), name("unknown"), age(0), gender('u'), admittedTime(0) {}
 
 //precondition: going to get the checkedInTime 
@@ -60,8 +60,8 @@ void Patient::setGender(char newGender) {
 	gender = newGender;
 }
 
-//precondition:
-//postcondition:
+//precondition: going to check for the time
+//postcondition: going to then return the hour , minutes, and seconds
 void Patient::displayCheckedInTime() const{
 	tm timeInfo;
 	time_t timeValue = static_cast<time_t>(checkedInTime);
@@ -71,17 +71,17 @@ void Patient::displayCheckedInTime() const{
 	cout << timeString << "\n";
 }
 
-//precondition:
-//postcondition:
+//precondition: going to pass in the objects of the class since its a friend operator 
+//postcondition: going to return and check for the less than priority
 bool operator<(const Patient& P1, const Patient& P2) {
 	return P1.priority < P2.priority;
 }
-//precondition: 
-//postcondition:
+//precondition: a string that has an array of 5
+//postcondition: going to return the information of the patient
 string Patient::ER_description[5] = { "Stable, with no resources anticipated or prescriptions", "Stable, with only one type of resource anticipated " ,"Stable, with multiple types of resources needed to investigate or treat", "High risk of deterioration, or signs of a time-critical problem", "Immediate, life-saving intervention required without delay" };
 
-//precondition:
-//postcondition:
+//precondition: friend operator that passes in the objects of the class
+//postcondition: going to return the information of the patients
 ostream& operator<<(ostream& outs, const Patient& obj) {
 	outs << "ER level: " << obj.getPriority() << " - " << obj.ER_description[obj.getPriority() - 1] << '\n';
 	outs << "\t\t\tChecked-In time: ";
@@ -92,8 +92,8 @@ ostream& operator<<(ostream& outs, const Patient& obj) {
 	return outs;
 }
 
-//precondition:
-//postcondition:
+//precondition: going to print the information
+//postcondition: going to create a menu that has a register patient, transfer patient, and display transferred
 void Patient::menuInformation() {
 	system("cls");
 	cout << "\n\t2> Simulation of an emergency room (ER) using priority queue STL\n";
@@ -126,6 +126,7 @@ void Patient::menuInformation() {
 			//push the top to the submit that holds the data of the priority queue
 			submit.push(pq2.top());
 			cout << "\n\t\t" << pq2.top().getName() << " - ";
+			//check for the priority number
 			switch (pq2.top().getPriority()) {
 			case 5: {
 				cout << "transfers to ICU...\n";
