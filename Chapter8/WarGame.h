@@ -17,9 +17,9 @@ double inputDouble(string prompt);
 //postcondition: 
 class WarGame{
 private:
-	queue <CardDeck> p1Cards;
-	queue <CardDeck> p2Cards;
-	queue <CardDeck> warCards;
+	deque <CardDeck> p1Cards;
+	deque <CardDeck> p2Cards;
+	deque <CardDeck> warCards;
 	int numCardsPerSuite;
 	vector <CardDeck> deck;
 public:
