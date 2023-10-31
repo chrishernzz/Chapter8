@@ -138,7 +138,7 @@ void WarGame::playGame() {
 //postcondition: going to create a menu that makse sure it calls the playGame function
 void WarGame::menuInformation() {
 	system("cls");
-	int game = inputInteger("\tEnter a number of cards per suit: ", 1, 13);
+	int game = inputInteger("\tEnter a number of cards per suit (1...13): ", 1, 13);
 	cout << "\n\t1> Simulation of War (card game) using deque STL\n\n";
 	WarGame game1(game);
 	if (game == 1) {
