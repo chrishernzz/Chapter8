@@ -125,12 +125,11 @@ void WarGame::playGame() {
 		}
 
 	} while (!p1Cards.empty() && !p2Cards.empty());
-
 	if (p1Cards.empty()) {
-		cout << "Player 1 wins the war with most number of cards(" << (numCardsPerSuit * 4) << ")." << endl;
+		cout << "Player 2 wins the war with most number of cards(" << (numCardsPerSuit * 4) << ")." << endl;
 	}
 	else {
-		cout << "Player 2 wins the war with most number of cards(" << (numCardsPerSuit * 4) << ")." << endl;
+		cout << "Player 1 wins the war with most number of cards(" << (numCardsPerSuit * 4) << ")." << endl;
 	}
 }
 
@@ -140,10 +139,12 @@ void WarGame::menuInformation() {
 	system("cls");
 	int game = inputInteger("\tEnter a number of cards per suit (1...13): ", 1, 13);
 	cout << "\n\t1> Simulation of War (card game) using deque STL\n\n";
-	WarGame game1(game);
 	if (game == 1) {
-		cout << "\tGame will always be a tie...\n";
-		return;
+		cout << "\n\tGame will always be a tie. No one will win, because 1 is the heighest number in both decks\n";
 	}
-	game1.playGame();
+	else {
+		WarGame game1(game);
+		game1.playGame();
+	}
+	
 }

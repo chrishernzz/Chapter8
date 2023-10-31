@@ -2,7 +2,7 @@
 //Date: 10/30/2023
 //subscription: CMPR131
 
-//Credit: Christian Hernandez,Bryan Alarcon,Thanh Tran, Joe Bryant,Erik Santana, and Saul Merino
+//Credit: Christian Hernandez,Bryan Alarcon,Thanh Tran, Joe Bryant,Erik Santana, Saul Merino, Otoniel Torres Bernal, and John Kim
 
 #include<iostream>
 #include"input (1).h"
@@ -54,6 +54,7 @@ int menuOption() {
 void challenge1() {
 	WarGame menu;
 	menu.menuInformation();
+
 }
 //precondition: going to call my Patient class
 //postcondition: going to then call my mainMenuInformation function that will have all the information and the menus as well 
