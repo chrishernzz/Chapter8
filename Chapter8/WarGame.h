@@ -20,7 +20,7 @@ private:
 	deque <CardDeck> p1Cards;
 	deque <CardDeck> p2Cards;
 	deque <CardDeck> warCards;
-	int numCardsPerSuite;
+	int numCardsPerSuit;
 	vector <CardDeck> deck;
 public:
 	//defualt constructor 
